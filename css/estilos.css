@@ -1,0 +1,344 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Sección 1 - Encabezado*/
+.enlace {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(49, 67, 169), rgb(107, 107, 181) 50%, rgb(255, 255, 255) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    background-position: 0 100%;
+}
+
+.logo {
+    height: 40px;
+}
+
+/*Sección 2 - Carrusel*/
+#segunda {
+    padding-top: 55px;
+}
+
+/*Sección 3 - Nosotros*/
+#tercera,
+#cuarta,
+#quinta,
+footer{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nosotros1 img,
+.nosotros2 img {
+    height: 150px;
+    border-radius: 5px 40px;
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*Sección cuarta - Equipo*/
+#cuarta {
+    background-color: rgb(51, 51, 51);
+}
+
+.equipo-img {
+    height: 32vh;
+    width: 90%;
+}
+
+/*Sección quinta - Herramientas y tecnología*/
+#quinta {
+    background-color: rgb(101, 101, 101);
+}
+
+.logo-herramienta {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 10vh;
+}
+
+.logo-zbrush {
+    background-image: url(../img/ZBrush-Logo.png);
+}
+
+.logo-unity {
+    background-image: url(../img/unity-logo.png);
+}
+
+.logo-blender {
+    background-image: url(../img/blender-logo.svg);
+}
+
+.logo-unreal {
+    background-image: url(../img/unreal-logo.png);
+}
+
+/*Sección sexta - Proyectos*/
+#sexta {
+    background-color: rgb(51, 51, 51);
+}
+
+.card-body {
+    background-color: rgb(107, 104, 104);
+    color: rgb(225, 225, 225);
+}
+
+.tarjeta img {
+    border-radius: 0px 40px 0px 00px;
+}
+
+.tarjeta {
+    border-radius: 0px 40px 0px 40px;
+    width: 22rem;
+}
+
+.texto-tarjeta {
+    border-radius: 0px 00px 00px 40px;
+}
+
+.boton{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+  }
+
+  .boton:before,
+  .boton:after{
+    position: absolute;
+    content: "Ir a la Web";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(46, 46, 46);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .boton:before{
+    color: #fff;
+    background: rgb(46, 46, 46);
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .boton:after{
+    color: rgb(46, 46, 46);
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .boton:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+
+
+/*Pie de página*/
+footer{
+    height: 17vh;
+    background-color: rgb(182, 181, 181);
+
+}
+
+footer p{
+    margin-top: 80px;
+}
+.iconos {
+    display: flex;
+}
+
+.iconos li {
+    list-style: none;
+}
+
+.iconos li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.iconos li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.iconos li a .bi {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+
+.iconos li:nth-child(1) a:hover .bi {
+    color: #3b5998;
+}
+
+.iconos li:nth-child(2) a:hover .bi {
+    color: #00aced;
+}
+
+.iconos li:nth-child(3) a:hover .bi {
+    color: #dd39da;
+}
+
+.iconos li:nth-child(4) a:hover .bi {
+    color: #007bb6;
+}
+
+.iconos li:nth-child(5) a:hover .bi {
+    color: #e4405f;
+}
+
+/* Media queries - MD */
+@media (min-width: 768px) {
+/* Sección primera- Encabezado */
+    #primera img{
+        height: 7vh;
+    }
+
+/* Sección segunda - Carrusel */
+    #segunda h5{
+        font-size: 1.5rem;
+    }
+/* Sección tercera - Nosotros */
+    .nosotros1 img,
+    .nosotros2 img {
+        height: 250px;
+    } 
+
+    p{
+        font-size: 1.2rem;
+    }
+    
+/* Sección cuarta - Equipo */
+    .equipo-img {
+        height: 45vh;
+    }
+
+/* Sección quinta - Herramientas y tecnologías */
+    .logo-herramienta {
+        height: 19vh;
+    }
+}
+
+/* Media queries - LG */
+@media (min-width: 992px) {
+    p{
+        font-size: 1.3rem;
+    }
+
+/* Sección cuarta - Equipo*/
+    .equipo-img {
+        height: 65vh;
+    }
+
+    .conocenos{
+        font-size: 20px;
+    }
+}
+
+/* Media queries - XL */
+@media (min-width: 1200px) {
+    /* Sección cuarta - Equipo*/
+    .equipo-img {
+        height: 80vh;
+    }
+
+    .tarjeta {
+        width: 18rem;
+    }
+}
+
+
+/* Media queries - XXL */
+@media (min-width: 1400px) {
+    p{
+        font-size: 1.6rem;
+    }
+
+    /* Sección segunda - Carrusel */
+    #segunda h5{
+        font-size: 40px;
+    }
+
+    /* Sección tercera - Quiénes somos */
+    .quienes, #cuarta h2, #quinta h2, #sexta h2{
+        font-size: 50px;
+    }
+
+    .titulo-nosotros{
+        font-size: 40px;
+    }
+
+    .nosotros1 img,
+    .nosotros2 img {
+        height: 350px;
+    }
+
+    /* Sección cuarta - Equipo*/
+    .equipo-img {
+        height: 65vh;
+        width: 60%;
+    }
+
+    .conocenos{
+        font-size: 25px;
+    }
+
+    /* Sección quinta - Herramientas y tecnologías */
+    .logo-herramienta {
+        background-size: 80%;
+    }
+
+    /* Sección sexta - Proyectos */
+    #sexta h5{
+        font-size: 30px;
+    }
+
+    #sexta p{
+        font-size: 22px;
+    }
+
+    /* Pie de página */
+    footer{
+        height: 14vh;
+        background-color: rgb(182, 181, 181);
+    
+    }
+    
+    footer p{
+        margin-top: 80px;
+        font-size: 20px;
+    }
+}

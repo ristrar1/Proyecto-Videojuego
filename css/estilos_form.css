@@ -1,0 +1,74 @@
+#fondo{
+    padding-top: 58px;
+}
+
+.fondo-img{
+    width: 100%;
+}
+
+/* Sección primera - Saludos */
+#saludo{
+    background-color: rgb(51, 51, 51);
+}
+
+#saludo h2{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.saludo-img{
+    background-image: url(../img/comunicacion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 220px;
+}
+
+/* Sección segunda - Formulario */
+#formulario{
+    background-color: rgb(96, 96, 96);
+    overflow: hidden;
+}
+
+.button{
+    background-color: rgb(47, 47, 47);
+    border: 1px solid black;
+}
+
+/* Media queries - MD */
+@media (min-width: 768px) {
+    p{
+        font-size: 1.2rem;
+    }
+
+    .saludo-img{
+        height: 300px;
+    }
+}
+
+/* Media queries - LG */
+@media (min-width: 992px) {
+    p{
+        font-size: 1.3rem;
+    }
+
+    .saludo-img{
+        height: 400px;
+    }
+}
+
+/* Media queries - XXL */
+@media (min-width: 1400px) {
+    p{
+        font-size: 1.6rem;
+    }
+
+    /* Sección segunda - Carrusel */
+    #segunda h5{
+        font-size: 40px;
+    }
+
+    form{
+        padding:0px 50px 0px 50px;
+    }
+}

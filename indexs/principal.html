@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Enzo Esteban Sepúlveda Zúñiga">
+    <meta name="description" content="Proyecto de página web con formato bootstrap y css con temática de videojuegos">
+    <meta name="keywords" content="html css bootstrap games videogames proyecto dam">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CDN bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Hoja estilos CSS -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Sección primera - Encabezado -->
+    <section id="primera">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top fondo-aula ps-3 pe-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="../img/logo.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto text-center">
+                        <li class="nav-item me-xxl-5">
+                            <a class="nav-link active enlace" aria-current="page" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item me-xxl-5">
+                            <a class="nav-link active enlace" href="#tercera">QUIÉNES SOMOS</a>
+                        </li>
+                        <li class="nav-item me-xxl-5">
+                            <a href="#cuarta" class="nav-link active enlace">EQUIPO</a>
+                        </li>
+                        <li class="nav-item me-xxl-5">
+                            <a href="#quinta" class="nav-link active enlace">HERRAMIENTAS Y TECNOLOGÍAS</a>
+                        </li>
+                        <li class="nav-item me-xxl-5">
+                            <a href="#" class="nav-link active enlace">BLOG</a>
+                        </li>
+                        <li class="nav-item me-xxl-5">
+                            <a class="nav-link active enlace" href="#sexta">NUESTROS PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active enlace" href="../indexs/formulario.html">FORMULARIO DE CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Sección segunda - Carrusel -->
+    <section id="segunda">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/carrusel1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Proyectos de gran envergadura</h5>
+                        <p>Nuestra empresa trabaja día a día en el desarrollo de videojuegos AAA e indies, llevando la
+                            experiencia definitiva al jugador</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Grandes artistas</h5>
+                        <p>Contamos con un gran abanico de ilustradores, programadores y diseñadores de alto calibre
+                            profesional.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Últimas tecnologías</h5>
+                        <p>Somos una empresa actualizada con las últimas tecnologías y en constante evolución</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Sección tercera - Nosotros -->
+    <section id="tercera" class="bg-dark text-light pb-5">
+        <h2 class="mt-3 mb-4 quienes">QUIÉNES SOMOS</h2>
+        <div class="d-lg-flex ps-lg-4 pe-lg-4 pt-lg-4 col-xl-10 mx-xl-auto">
+            <div class="nosotros1">
+                <img src="../img/nosotros1xl.JPG" alt="logo">
+            </div>
+            <div class="pt-xxl-5">
+                <h2 class="mt-4 titulo-nosotros">Nuestra empresa</h2>
+                <p class="ps-5 pe-5 mt-3">Empresa en auge dedicada al arte y diseño de videojuegos. Traemos ideas
+                    frescas a
+                    un mercado saturado y monótono. Especializados en conceptos y visualización arquitectónica, arte
+                    conceptual y diseño de ambientes, diseño de gameplay y niveles, y mucho más.</p>
+            </div>
+        </div>
+        <div class="d-lg-flex flex-row-reverse ps-lg-4 pe-lg-4 pt-lg-4 col-xl-10 mx-xl-auto">
+            <div class="nosotros2 mt-5 mt-lg-2">
+                <img src="../img/nosotros2xl.JPG" alt="logo">
+            </div>
+            <div class="pt-xxl-5">
+                <h2 class="mt-4 titulo-nosotros">Nuestra actitud</h2>
+                <p class="ps-5 pe-5 mt-3">Nuestro arte conceptual alcanza cotas nunca antes vista, con unas animaciones
+                    y
+                    diseño y
+                    modelado de personajes de alta calidad. Sorpréndete con nuestros Stroyboards.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sección cuarta - Equipo -->
+    <section id="cuarta" class="text-light pb-3 pb-lg-5">
+        <div>
+            <h2 class="mt-3 mb-4 mb-lg-5">CONOCE NUESTRO EQUIPO</h2>
+            <div class="">
+                <a href="../indexs/equipo.html" class="position-relative">
+                    <button type="button" class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x conocenos" data-bs-toggle="tooltip" data-bs-placement="top" title="Dale al botón">
+                        Conócenos
+                    </button>
+                    <img class="equipo-img mb-lg-4" src="../img/equipo.jpg" alt="">
+                </a>
+                <p class="ps-5 pe-5 mt-3">Descubre quién está detrás de todas los increíbles diseños y los videojuegos
+                    de
+                    éxito de nuestra compañía. No son robots, aunque algunos lo parezcan.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sección quinta - Herramientas y tecnologías -->
+    <section id="quinta" class="text-light pb-3 pe-lg-5 ps-lg-5">
+        <h2 class="mt-3 mb-4">HERRAMIENTAS Y TECNOLOGÍA</h2>
+        <p class="ps-5 pe-5 mt-3 mt-xxl-5">Estamos en constante evolución y actualización, utilizando las últimas
+            tecnologías
+            en diseño de personajes y escenarios, ilustración y programación.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="ps-5 pe-5 mb-5 ps-lg-2 pe-lg-2 col-xxl-6">
+                            <div class="logo-herramienta logo-zbrush"></div>
+                            <p>Una herramienta en auge gracias a su versatilidad, permitiendo una escultura y pintura
+                                digital en
+                                gran detalle</p>
+                        </div>
+                        <div class="ps-5 pe-5 mb-5 ps-lg-2 pe-lg-2 col-xxl-6">
+                            <div class="logo-herramienta logo-unity"></div>
+                            <p>Utilizamos la herramienta por excelencia para crear juegos increíbles y otras
+                                experiencias
+                                interactivas a tiempo real.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="ps-5 pe-5 mb-5 ps-lg-2 pe-lg-2 col-xxl-6">
+                            <div class="logo-herramienta logo-blender"></div>
+                            <p>También hacemos uso de herramientas clásicas y óptimas como lo es Blender. Visita
+                                nuestros
+                                proyectos
+                                para saber más.</p>
+                        </div>
+                        <div class="ps-5 pe-5 mb-5 ps-lg-2 pe-lg-2 col-xxl-6">
+                            <div class="logo-herramienta logo-unreal"></div>
+                            <p>El motor más utilizado y más avanzado del mercado es una de nuestras bazas en la
+                                industria de
+                                los
+                                videojuegos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección sexta - Proyectos -->
+    <section id="sexta" class="container-fluid text-center pt-4 pb-4 text-light ">
+        <h2 class="mb-4 mt-3 mb-lg-5">NUESTROS PROYECTOS</h2>
+        <div class="d-xl-flex">
+            <div class="d-lg-flex col-xl-5 mx-xl-auto">
+                <div class="mx-auto card mb-4 mb-lg-5 tarjeta me-xl-5">
+                    <img src="../img/proyectos1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body texto-tarjeta">
+                        <h5 class="card-title mb-xxl-4">Diseño de Personajes</h5>
+                        <p class="card-text">Estamos embarcados en la aventura del mundo de Arkesia con el diseño de
+                            personajes
+                            del exitoso videojuego MMORPG Lost Ark.</p>
+                        <a href="https://www.playlostark.com/es-es/" class="boton mt-xxl-4"></a>
+                    </div>
+                </div>
+                <div class="mx-auto card tarjeta mb-4 mb-lg-5">
+                    <img src="../img/proyectos2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body texto-tarjeta">
+                        <h5 class="card-title mb-xxl-4">Diseño de Escenarios</h5>
+                        <p class="card-text">Sumérgete en mundos desconocidos, mazmorras oscuras y tenebrosas y niveles
+                            increíbles que irán más allá de tu imaginación</p>
+                        <a href="https://www.artstation.com/channels/architectural_concepts?sort_by=trending"
+                            class="boton mt-xxl-4"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-flex col-xl-5 mx-xl-auto">
+                <div class="card mx-auto tarjeta mb-4 me-xl-5 mb-xl-5">
+                    <img src="../img/proyectos3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body texto-tarjeta">
+                        <h5 class="card-title mb-xxl-4">Arte Conceptual</h5>
+                        <p class="card-text">Grandes artistas trabajan en nuestras filas día a día para traer grandes
+                            obras
+                            que
+                            quedarán plasmadas en juegos AAA</p>
+                        <a href="https://www.artstation.com/channels/concept_art?sort_by=trending"
+                            class="boton mt-lg-4"></a>
+                    </div>
+                </div>
+                <div class="card mx-auto tarjeta mb-4 mb-xl-5">
+                    <img src="../img/proyectos4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body texto-tarjeta">
+                        <h5 class="card-title mb-xxl-4">Diseño Arquitectónico</h5>
+                        <p class="card-text">Assassins
+                            Creed,
+                            God of War y The Last of Us son sólo algunas muestras de nuestro talento</p>
+                        <a href="https://www.ubisoft.com/es-es/game/assassins-creed/valhalla" class="boton mt-lg-5"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de página -->
+    <footer class="pt-2 container-fluid position-relative">
+        <ul class="iconos pt-2 mt-2 mb-3 position-absolute top-0 start-50 translate-middle-x">
+            <li>
+                <a href="https://es-es.facebook.com/">
+                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li><a href="https://twitter.com/?logout=1650458115356"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://www.tiktok.com/foryou?is_copy_url=1&is_from_webapp=v1"><i class="bi bi-tiktok"
+                        aria-hidden="true"></i></a></li>
+            <li><a href="https://es.linkedin.com/"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="text-dark">Revenge Games® 2022</p>
+    </footer>
+    <!-- Javascript -->
+    <script src="../javascript/java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script> 
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)})
+    </script>
+</body>
+
+</html>

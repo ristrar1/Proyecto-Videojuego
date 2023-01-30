@@ -1,0 +1,20 @@
+body{
+    overflow-x: hidden;
+}
+
+#integrantes{
+    background-image: url(../img/fondo_integrantes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#integrantes h2{
+    padding-top: 40px;
+}
+
+.integrantes-img {
+    height: 30vh;
+    border-radius: 50%;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.8);
+}
